@@ -70,7 +70,6 @@ def drop():
     from flask_app.app import app
     from flask_app.models import db
     db.drop_all()
-    db.engine.execute('DROP TABLE IF EXISTS alembic_version')
 
 
 @db.command()
